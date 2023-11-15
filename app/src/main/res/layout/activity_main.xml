@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_Peso"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu Peso" />
+
+    <EditText
+        android:id="@+id/edt_Altura"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Peso"
+        android:layout_marginTop="10dp"
+        android:hint="Digite sua Altura" />
+
+    <!-- <TextView
+       android:layout_marginBottom="4dp"
+       android:textStyle="bold|italic"
+       android:textColor="@color/black"
+       android:textSize="16dp"
+       android:layout_above="@+id/btncalcular"
+       android:textAlignment="center"
+       android:text="created by João Vitor P. Gonçalves"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" /> -->
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Calcular IMC" />
+
+</RelativeLayout>
